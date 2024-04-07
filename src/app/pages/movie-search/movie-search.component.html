@@ -1,0 +1,4 @@
+<main class="content">
+    <app-movie-form (moviesEmitter)="receiveFoundMovies($event)" [title]="title" />
+    <app-movie-list [movies]="movies" />
+</main>

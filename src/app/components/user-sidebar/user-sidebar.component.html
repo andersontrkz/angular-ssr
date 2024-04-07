@@ -1,0 +1,11 @@
+<aside class="user_sidebar">
+    <img class="user_avatar" [src]="user.avatar" />
+    <div class="user_infos">
+        <span class="user_name">{{user.first_name}} {{user.last_name}}</span>
+        <span class="user_email">{{user.email}}</span>
+    </div>
+    <div class="user_details" (click)="redirectToUserList()">
+        <i class="fa-solid fa-angles-left"></i>
+        <span>Voltar</span>
+    </div>
+</aside>

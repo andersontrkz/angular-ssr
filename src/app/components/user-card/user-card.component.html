@@ -1,0 +1,10 @@
+<div class="user_card" (click)="redirectToUserDetails(user.id)">
+    <img class="user_avatar" [src]="user.avatar" />
+    <div class="user_infos">
+        <span class="user_name">{{user.first_name}} {{user.last_name}}</span>
+        <span class="user_email">{{user.email}}</span>
+    </div>
+    <div class="user_details">
+        <i class="fa fa-eye"></i>
+    </div>
+</div>

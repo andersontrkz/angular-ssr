@@ -1,0 +1,38 @@
+.home_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+        margin: 40px 40px 0 40px;
+
+        .home_card_title {
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--white-color);
+            border-bottom: 6px solid var(--main-color);
+        }
+
+        .home_card {
+            border-radius: 8px;
+            background-color: var(--white-color);
+            height: 240px;
+            width: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+            cursor: pointer;
+
+            svg {
+                font-size: 80px;
+            }
+        }
+
+        .home_card:hover {
+            opacity: 0.9;
+            transform: scale(1.025);
+            transition: .2s;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.content {
+    align-items: center;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 106px);
+
+    .not_found {
+        text-align: center;
+
+        p {
+            color: var(--white-color);
+        }
+    }
+}

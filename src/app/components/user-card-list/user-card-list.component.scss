@@ -1,0 +1,21 @@
+.user_card_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 32px 240px;
+}
+
+@media (max-width: 980px) {
+    .user_card_list {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 32px 240px;
+    }
+}
+
+@media (max-width: 740px) {
+    .user_card_list {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 32px 240px;
+    }
+}

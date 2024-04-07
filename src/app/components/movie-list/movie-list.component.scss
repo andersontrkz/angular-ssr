@@ -1,0 +1,57 @@
+.search_result {
+    color: var(--white-color);
+
+    .result_list {
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--white-color);
+            border-bottom: 6px solid var(--main-color);
+            margin-bottom: 40px;
+            max-width: max-content;
+        }
+
+        .movie_card {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            color: var(--black-color);
+            display: flex;
+            margin: 16px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                span {
+                    margin-left: 16px;
+                }
+
+                .title {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 112px;
+                border-radius:  8px 0 0 8px;
+            }
+        }
+    }
+}
+
+.result_not_found {
+    color: var(--white-color);
+
+    .result {
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--white-color);
+            border-bottom: 6px solid var(--main-color);
+            margin-bottom: 40px;
+            max-width: max-content;
+        }
+    }
+}

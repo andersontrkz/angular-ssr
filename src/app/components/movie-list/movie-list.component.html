@@ -1,0 +1,23 @@
+<div *ngIf="movies && movies.length > 0" class="search_result">
+    <hr />
+
+    <div class="result_list">
+        <h2>Results</h2>
+        <div *ngFor="let movie of movies" class="movie_card">
+            <img [src]="getImage(movie.poster_path)" />
+            <div>
+                <span class="title">{{ movie.title }}</span>
+                <span>({{ movie.release_date | date : "medium" }})</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="result_not_found" *ngIf="movies && movies.length === 0">
+    <hr />
+
+    <div class="result">
+        <h2>Results</h2>
+        <p>Movie not found</p>
+    </div>
+</div>
